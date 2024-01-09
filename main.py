@@ -1,7 +1,7 @@
 import base64
 
 def encrypt_pass(password):
-    encoded_pass = base64.b16encode(password.encode())
+    encoded_pass = base64.b64encode(password.encode())
     return encoded_pass
 
 
