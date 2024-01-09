@@ -5,6 +5,16 @@ def encrypt_pass(password):
     return encoded_pass
 
 
-password = input("ENTER YOUR PASSWORD:")
+def decrypt_pass(password):
+    decoded  = base64.b64decode(password)
+    decoded_data = decoded.decode()
 
-print("Your Encoded Password : {}".format(encrypt_pass(password)))
+    return decoded_data
+
+password = input("ENTER YOUR PASSWORD:")
+encrypt = encrypt_pass(password)
+
+print("Your Encoded Password : {}".format(encrypt))
+
+
+print("Your Decoded Password: {}".format(decrypt_pass(encrypt)))
