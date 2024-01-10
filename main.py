@@ -14,7 +14,7 @@ def decrypt_pass(password):
 password = input("ENTER YOUR PASSWORD:")
 encrypt = encrypt_pass(password)
 
-print("Your Encoded Password : {}".format(encrypt))
+print("Your Encoded Password : {}".format(encrypt))#you can encrypt your password 
 
 
 print("Your Decoded Password: {}".format(decrypt_pass(encrypt)))
